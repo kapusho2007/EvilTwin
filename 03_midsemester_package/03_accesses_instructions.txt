@@ -1,0 +1,14 @@
+Access Instruction:
+
+UNSW-NB15:
+downloaded from here:
+https://unsw-my.sharepoint.com/personal/z5025758_ad_unsw_edu_au/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fz5025758%5Fad%5Funsw%5Fedu%5Fau%2FDocuments%2FUNSW%2DNB15%20dataset&viewid=f8d1dec5%2Dcd5f%2D42ae%2D8b06%2D2fece580c74a
+
+Rogue Industrial Access Points Dataset:
+https://ieeexplore.ieee.org/document/10905362
+
+AWID2:
+https://icsdweb.aegean.gr/awid/download-dataset
+
+AWID3:
+https://icsdweb.aegean.gr/awid/download-dataset
