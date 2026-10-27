@@ -1,6 +1,6 @@
 # Milestone 3 submission: Evil Twin / Rogue AP detection (MITRE T1557.004)
 
-Group 3: Iftach Samel, Itay Rubanenko, Shaked Sarbstein.
+Group 3: Itay Rubanenko, Shaked Sarbstein.
 Datasets: AWID3 (Evil_Twin subset) and RIDS (RogueAP class).
 
 ## Contents
