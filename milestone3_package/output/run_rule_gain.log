@@ -1,0 +1,23 @@
+[awid3] fixed-feature rules, pooled F1: ssid_newcomer 0.981, rssi_sibling_diff 0.951, beacon_iat_std 0.906, rssi_mean 0.895, beacon_rate 0.852
+[awid3] Rule: features per fold ['rssi_sibling_diff (<=)', 'rssi_sibling_diff (<=)', 'ssid_newcomer (>=)', 'rssi_sibling_diff (<=)', 'rssi_sibling_diff (<=)']
+[awid3] RuleFixed: features per fold ['ssid_newcomer (>=)', 'ssid_newcomer (>=)', 'ssid_newcomer (>=)', 'ssid_newcomer (>=)', 'ssid_newcomer (>=)']
+[awid3] Session baseline F1 = 0.482  (attack session: 1451 windows, 461 positive)
+[awid3] RuleFixed pooled F1 0.981 [0.960, 0.997] | vs Rule +0.014 [+0.000, +0.038] | vs RuleFixed +0.000 [+0.000, +0.000] | attack session F1 0.981 FPR 0.018
+[awid3] Rule      pooled F1 0.967 [0.939, 0.990] | vs Rule +0.000 [+0.000, +0.000] | vs RuleFixed -0.014 [-0.038, +0.000] | attack session F1 0.967 FPR 0.018
+[awid3] RF        pooled F1 0.978 [0.957, 0.994] | vs Rule +0.011 [-0.003, +0.034] | vs RuleFixed -0.003 [-0.007, +0.000] | attack session F1 0.978 FPR 0.018
+[awid3] XGB       pooled F1 0.979 [0.958, 0.995] | vs Rule +0.012 [-0.004, +0.036] | vs RuleFixed -0.002 [-0.007, +0.000] | attack session F1 0.979 FPR 0.019
+[awid3] OCSVM     pooled F1 0.350 [0.220, 0.465] | vs Rule -0.617 [-0.756, -0.495] | vs RuleFixed -0.631 [-0.767, -0.517] | attack session F1 0.350 FPR 0.049
+[awid3] AE        pooled F1 0.327 [0.202, 0.442] | vs Rule -0.640 [-0.771, -0.517] | vs RuleFixed -0.654 [-0.779, -0.534] | attack session F1 0.327 FPR 0.057
+[awid3] LSTM      pooled F1 0.766 [0.685, 0.827] | vs Rule -0.201 [-0.281, -0.132] | vs RuleFixed -0.215 [-0.292, -0.154] | attack session F1 0.766 FPR 0.181
+[rids] fixed-feature rules, pooled F1: beacon_rate 0.991, length_mean 0.777, rssi_mean 0.654, beacon_iat_std 0.654, n_frames 0.421
+[rids] Rule: features per fold ['beacon_rate (>=)', 'beacon_rate (>=)', 'beacon_rate (>=)', 'rssi_mean (<=)', 'length_mean (<=)']
+[rids] RuleFixed: features per fold ['beacon_rate (>=)', 'beacon_rate (>=)', 'beacon_rate (>=)', 'beacon_rate (>=)', 'beacon_rate (>=)']
+[rids] Session baseline F1 = 0.734  (attack session: 760 windows, 441 positive)
+[rids] RuleFixed pooled F1 0.991 [0.982, 0.997] | vs Rule +0.332 [+0.257, +0.417] | vs RuleFixed +0.000 [+0.000, +0.000] | attack session F1 0.991 FPR 0.000
+[rids] Rule      pooled F1 0.659 [0.578, 0.732] | vs Rule +0.000 [+0.000, +0.000] | vs RuleFixed -0.332 [-0.417, -0.257] | attack session F1 0.936 FPR 0.163
+[rids] RF        pooled F1 0.984 [0.966, 0.997] | vs Rule +0.325 [+0.248, +0.412] | vs RuleFixed -0.007 [-0.025, +0.007] | attack session F1 0.984 FPR 0.000
+[rids] XGB       pooled F1 0.988 [0.970, 0.998] | vs Rule +0.329 [+0.254, +0.415] | vs RuleFixed -0.003 [-0.022, +0.010] | attack session F1 0.997 FPR 0.000
+[rids] OCSVM     pooled F1 0.561 [0.470, 0.639] | vs Rule -0.099 [-0.141, -0.061] | vs RuleFixed -0.430 [-0.521, -0.353] | attack session F1 0.960 FPR 0.041
+[rids] AE        pooled F1 0.612 [0.531, 0.678] | vs Rule -0.047 [-0.110, +0.011] | vs RuleFixed -0.379 [-0.467, -0.313] | attack session F1 0.865 FPR 0.386
+[rids] LSTM      pooled F1 0.990 [0.979, 0.999] | vs Rule +0.331 [+0.254, +0.416] | vs RuleFixed -0.001 [-0.013, +0.011] | attack session F1 0.990 FPR 0.016
+done in 793s

@@ -1,0 +1,36 @@
+﻿[1m============================= test session starts =============================[0m
+platform win32 -- Python 3.13.7, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\kapus\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: C:\shaked\Tel_Aviv_University\semester_b\sadna\stage3_submission_v2\code
+plugins: anyio-4.13.0, Faker-38.2.0
+[1mcollecting ... [0mcollected 21 items
+
+tests/test_artifacts.py::test_reload_parity[awid3-RF] [32mPASSED[0m[32m             [  4%][0m
+tests/test_artifacts.py::test_reload_parity[awid3-XGB] [32mPASSED[0m[32m            [  9%][0m
+tests/test_artifacts.py::test_reload_parity[awid3-OCSVM] [32mPASSED[0m[32m          [ 14%][0m
+tests/test_artifacts.py::test_reload_parity[awid3-AE] [32mPASSED[0m[32m             [ 19%][0m
+tests/test_artifacts.py::test_reload_parity[awid3-LSTM] [32mPASSED[0m[32m           [ 23%][0m
+tests/test_artifacts.py::test_reload_parity[rids-RF] [32mPASSED[0m[32m              [ 28%][0m
+tests/test_artifacts.py::test_reload_parity[rids-XGB] [32mPASSED[0m[33m             [ 33%][0m
+tests/test_artifacts.py::test_reload_parity[rids-OCSVM] [32mPASSED[0m[33m           [ 38%][0m
+tests/test_artifacts.py::test_reload_parity[rids-AE] [32mPASSED[0m[33m              [ 42%][0m
+tests/test_artifacts.py::test_reload_parity[rids-LSTM] [32mPASSED[0m[33m            [ 47%][0m
+tests/test_dependency_rule.py::test_downstream_modules_are_dataset_agnostic [32mPASSED[0m[33m [ 52%][0m
+tests/test_feature_selection.py::test_no_forbidden_field_is_a_feature [32mPASSED[0m[33m [ 57%][0m
+tests/test_feature_selection.py::test_shortcuts_excluded_but_are_candidates_or_ablation [32mPASSED[0m[33m [ 61%][0m
+tests/test_feature_selection.py::test_restored_features_present_and_complement_dropped [32mPASSED[0m[33m [ 66%][0m
+tests/test_feature_selection.py::test_redundancy_decisions_hold_on_training_folds [32mPASSED[0m[33m [ 71%][0m
+tests/test_features.py::test_frame_class_joint_type_subtype [32mPASSED[0m[33m       [ 76%][0m
+tests/test_features.py::test_windows_are_causal_and_count_beacons [32mPASSED[0m[33m [ 80%][0m
+tests/test_features.py::test_label_and_future_frames [32mPASSED[0m[33m              [ 85%][0m
+tests/test_features.py::test_ssid_features_are_past_only [32mPASSED[0m[33m          [ 90%][0m
+tests/test_split.py::test_folds_hold_both_classes_and_all_sessions [32mPASSED[0m[33m [ 95%][0m
+tests/test_split.py::test_purge_gap [32mPASSED[0m[33m                               [100%][0m
+
+[33m============================== warnings summary ===============================[0m
+tests/test_artifacts.py: 15 warnings
+  C:\Users\kapus\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: [15]. At least one non-missing value is needed for imputation with strategy='median'.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[33m======================= [32m21 passed[0m, [33m[1m15 warnings[0m[33m in 9.68s[0m[33m =======================[0m

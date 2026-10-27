@@ -1,0 +1,30 @@
+[rids] start  XGB   val F1 0.996 FPR 0.0000 FNR 0.005
+[rids] start  LSTM  val F1 0.989 FPR 0.0001 FNR 0.014
+[rids] start  OCSVM val F1 0.547 FPR 0.0172 FNR 0.044
+[rids] start  AE    val F1 0.635 FPR 0.0101 FNR 0.117
+[rids] noise  XGB   val F1 0.996 -> 0.996  FPR 0.0000 FNR 0.005  drop
+[rids] noise  LSTM  val F1 0.989 -> 0.989  FPR 0.0001 FNR 0.014  drop
+[rids] noise  OCSVM val F1 0.547 -> 0.547  FPR 0.0172 FNR 0.044  drop
+[rids] noise  AE    val F1 0.635 -> 0.635  FPR 0.0101 FNR 0.117  drop
+[rids] oc_f1  XGB   val F1 0.996 -> 0.996  FPR 0.0000 FNR 0.005  KEEP
+[rids] oc_f1  LSTM  val F1 0.989 -> 0.989  FPR 0.0001 FNR 0.014  KEEP
+[rids] oc_f1  OCSVM val F1 0.547 -> 0.566  FPR 0.0159 FNR 0.044  KEEP
+[rids] oc_f1  AE    val F1 0.635 -> 0.714  FPR 0.0075 FNR 0.070  KEEP
+[rids] hybrid XGB   val F1 0.996 -> 0.996  FPR 0.0000 FNR 0.005  drop
+[rids] hybrid LSTM  val F1 0.989 -> 0.980  FPR 0.0002 FNR 0.019  drop
+[rids] hybrid OCSVM val F1 0.566 -> 0.566  FPR 0.0159 FNR 0.044  drop
+[rids] hybrid AE    val F1 0.714 -> 0.714  FPR 0.0075 FNR 0.070  drop
+[rids] ap_baseXGB   val F1 0.996 -> 0.781  FPR 0.0014 FNR 0.280  drop
+[rids] ap_baseLSTM  val F1 0.989 -> 0.989  FPR 0.0001 FNR 0.014  drop
+[rids] ap_baseOCSVM val F1 0.566 -> 0.245  FPR 0.0527 FNR 0.203  drop
+[rids] ap_baseAE    val F1 0.714 -> 0.248  FPR 0.0495 FNR 0.234  drop
+[rids] TEST start XGB   F1 0.981 [0.962, 0.995] FPR 0.0004 FNR 0.007 FP 14 FN 3
+[rids] TEST final XGB   F1 0.981 [0.962, 0.995] FPR 0.0004 FNR 0.007 FP 14 FN 3
+[rids] TEST start LSTM  F1 0.885 [0.831, 0.930] FPR 0.0027 FNR 0.018 FP 105 FN 8
+[rids] TEST final LSTM  F1 0.885 [0.831, 0.930] FPR 0.0027 FNR 0.018 FP 105 FN 8
+[rids] TEST start OCSVM F1 0.470 [0.385, 0.549] FPR 0.0242 FNR 0.045 FP 929 FN 20
+[rids] TEST final OCSVM F1 0.533 [0.441, 0.609] FPR 0.0182 FNR 0.063 FP 697 FN 28
+[rids] TEST start AE    F1 0.405 [0.318, 0.486] FPR 0.0262 FNR 0.168 FP 1004 FN 74
+[rids] TEST final AE    F1 0.642 [0.540, 0.726] FPR 0.0107 FNR 0.088 FP 410 FN 39
+[rids] final configuration: {'noise': False, 'oc_f1': True, 'hybrid': False, 'ap_base': False}
+done in 2374s

@@ -1,0 +1,14 @@
+# Milestone 3 (Milestone3_v2). Versions used for the reported results (Python 3.13, CPU only).
+# Ingestion (run_ingest.py) needs only pandas/numpy; everything else is for features, models, report.
+pandas==3.0.5
+numpy==2.5.3
+scikit-learn==1.9.1
+scipy==1.18.1
+xgboost==3.4.1
+torch==2.14.1             # LSTM and Autoencoder; run_train.py fails loudly without it
+imbalanced-learn==0.14.2  # SMOTE comparison (Section 1.3) only
+joblib==1.6.0             # model artifacts
+pyarrow==26.0.0           # required: window tables are Parquet (only ingestion falls back to .csv.gz)
+matplotlib==3.11.2
+python-docx==1.2.0
+pytest==9.1.1            # unit tests: python -m pytest tests

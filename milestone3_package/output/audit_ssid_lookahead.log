@@ -1,0 +1,2 @@
+{'dataset': 'awid3', 'beaconing_aps_with_ssid': 2, 'aps_multi_ssid': 0, 'windows_old': 1451, 'windows_new': 1451, 'same_shape': True, 'cells_changed_ssid_features': 0, 'cells_changed_all': 0, 'windows_changed': 0}
+{'dataset': 'rids', 'beaconing_aps_with_ssid': 3, 'aps_multi_ssid': 0, 'windows_old': 38765, 'windows_new': 38765, 'same_shape': True, 'cells_changed_ssid_features': 0, 'cells_changed_all': 0, 'windows_changed': 0}

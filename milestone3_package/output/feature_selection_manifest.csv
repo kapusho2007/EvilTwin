@@ -1,0 +1,22 @@
+feature,status,category,partner,partition,decided_before_test_results,reason,train_fold_redundancy_confirmed,min_abs_spearman_train
+n_frames,retained,domain_prespecified,,a-priori (domain),yes,window traffic volume,,
+share_data,retained,redundancy,duration_mean,train-folds,yes,|rho|>0.95 with duration_mean (RIDS),False,0.5004
+share_mgmt,dropped,redundancy,share_data,train-folds,yes,complement of share_data (rho=-1 by definition),True,1.0
+beacon_rate,retained,domain_prespecified,,a-priori (domain),yes,rogue beacon flood rate,,
+deauth_count,retained,domain_prespecified,,a-priori (domain),yes,deauth/disassoc burst,,
+beacon_iat_mean,retained,redundancy,beacon_rate,train-folds,yes,|rho|>0.95 with beacon_rate (rate ~ 1/mean IAT),False,0.918
+beacon_iat_std,retained,domain_prespecified,,a-priori (domain),yes,beacon timing jitter,,
+seq_anom,retained,domain_prespecified,,a-priori (domain),yes,sequence-counter discontinuity of the AP,,
+retry_rate,retained,domain_prespecified,,a-priori (domain),yes,retransmission rate,,
+duration_mean,retained,domain_prespecified,,a-priori (domain),yes,airtime,,
+duration_std,retained,domain_prespecified,,a-priori (domain),yes,airtime variability,,
+length_mean,retained,domain_prespecified,,a-priori (domain),yes,frame size,,
+length_std,retained,domain_prespecified,,a-priori (domain),yes,frame size variability,,
+rssi_mean,retained,domain_prespecified,,a-priori (domain),yes,received signal level,,
+rssi_std,retained,domain_prespecified,,a-priori (domain),yes,signal spread (twin radio),,
+clock_skew_ppm,dropped,leakage_shortcut,,a-priori (domain),yes,"presence correlates with class (missing in benign, present in attack); a coverage/leakage shortcut, excluded a priori, not on a score",,
+n_bssid_same_ssid,retained,domain_prespecified,,a-priori (domain),yes,same-SSID sibling count,,
+rssi_sibling_diff,retained,domain_prespecified,,a-priori (domain),yes,RSSI vs same-SSID sibling,,
+mfpc,dropped,leakage_shortcut,,a-priori (domain),yes,attacker-set RSN/encryption configuration; ablation-only (+config),,
+mfpc_sibling_diff,dropped,redundancy,mfpc,train-folds,yes,|rho|>0.95 with mfpc (AWID3); undefined on RIDS,True,1.0
+ssid_newcomer,retained,domain_prespecified,,a-priori (domain),yes,another AP beaconed this SSID first,,

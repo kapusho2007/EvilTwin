@@ -1,0 +1,6 @@
+dataset,split,model,params,val_PR_AUC,F1,F1_lo,F1_hi,PR_AUC,ROC_AUC,FPR,FNR,R_at_FPR1,TP,FP,FN,TN,n_test
+rids,label_stratified,RF,{},1.0,0.9886,0.9565,1.0,1.0,1.0,0.0,0.0225,1.0,87,0,2,35954,36043
+rids,label_stratified,XGB,"{'max_depth': 3, 'learning_rate': 0.05}",1.0,0.9944,0.9787,1.0,0.9993,1.0,0.0,0.0112,1.0,88,0,1,35954,36043
+rids,label_stratified,OCSVM,"{'nu': 0.01, 'gamma': 'scale'}",1.0,0.5855,0.3685,0.7187,0.8403,0.9999,0.0035,0.0,1.0,89,126,0,35828,36043
+rids,label_stratified,AE,{'bottleneck': 4},1.0,0.0144,0.0063,0.0239,0.8403,0.9999,0.33796,0.0,1.0,89,12151,0,23803,36043
+rids,label_stratified,LSTM,"{'h1': 64, 'h2': 32}",1.0,0.0074,0.0031,0.0123,0.8608,0.9531,0.64121,0.0337,0.9101,86,23054,3,12900,36043

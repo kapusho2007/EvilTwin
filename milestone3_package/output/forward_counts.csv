@@ -1,0 +1,13 @@
+dataset,split,part,n,pos,neg
+awid3,label_independent,train,686,104,582
+awid3,label_independent,val,364,165,199
+awid3,label_independent,test,379,182,197
+awid3,label_stratified,train,1056,271,785
+awid3,label_stratified,val,179,87,92
+awid3,label_stratified,test,196,93,103
+rids,label_independent,train,2851,441,2410
+rids,label_independent,val,0,0,0
+rids,label_independent,test,35914,0,35914
+rids,label_stratified,train,2533,259,2274
+rids,label_stratified,val,169,83,86
+rids,label_stratified,test,36043,89,35954

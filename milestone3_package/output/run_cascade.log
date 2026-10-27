@@ -1,0 +1,36 @@
+[awid3] gate from the 2.2-final one-class models (kept fixes: ['ap_base', 'noise', 'oc_f1'])
+[awid3] fold 0: gate AE t=0.281 val pass 0.406 | test gate recall 0.958 pass 0.486 escalated 44 (19 attack)
+[awid3] fold 1: gate AE t=0.6228 val pass 0.391 | test gate recall 0.883 pass 0.358 escalated 43 (36 attack)
+[awid3] fold 2: gate AE t=0.2387 val pass 0.801 | test gate recall 1.000 pass 0.794 escalated 16 (1 attack)
+[awid3] fold 3: gate AE t=0.1476 val pass 0.486 | test gate recall 0.989 pass 0.431 escalated 2 (2 attack)
+[awid3] fold 4: gate AE t=0.2118 val pass 0.468 | test gate recall 0.779 pass 0.364 escalated 1 (0 attack)
+[awid3] parity XGB: max |reloaded - stored OOF score| = 2.86e-08
+[awid3] parity LSTM: max |reloaded - stored OOF score| = 2.08e-07
+  dataset                                                 config      F1   F1_lo   F1_hi       P       R     FPR     FNR   TP   FP   FN   TN  dF1_vs_XGB  dF1_lo  dF1_hi  gate_recall  pass_rate  escalated  escalated_attack
+0   awid3                                          XGBoost alone  0.9787  0.9583  0.9950  0.9603  0.9978  0.0192  0.0022  460   19    1  971      0.0000  0.0000  0.0000       0.9197     0.4852        106                58
+1   awid3                                             LSTM alone  0.7657  0.6852  0.8268  0.6892  0.8612  0.1808  0.1388  397  179   64  811     -0.2131 -0.2902 -0.1523       0.9197     0.4852        106                58
+2   awid3                          Autoencoder alone (99th pct.)  0.3269  0.2017  0.4425  0.6433  0.2191  0.0566  0.7809  101   56  360  934     -0.6519 -0.7774 -0.5325       0.9197     0.4852        106                58
+3   awid3               Gate 99th pct. (Table 1.3 AE) -> XGBoost  0.3538  0.2180  0.4753  0.9182  0.2191  0.0091  0.7809  101    9  360  981     -0.6250 -0.7595 -0.5009       0.9197     0.4852        106                58
+4   awid3  Gate (recall 0.99) -> stage 2, arbiter: trust XGBoost  0.9369  0.9054  0.9631  0.9570  0.9176  0.0192  0.0824  423   19   38  971     -0.0418 -0.0691 -0.0207       0.9197     0.4852        106                58
+5   awid3                                 arbiter: always benign  0.8649  0.8170  0.9049  0.9530  0.7918  0.0182  0.2082  365   18   96  972     -0.1138 -0.1594 -0.0742       0.9197     0.4852        106                58
+6   awid3                                    arbiter: trust LSTM  0.8193  0.7614  0.8670  0.8488  0.7918  0.0657  0.2082  365   65   96  925     -0.1594 -0.2134 -0.1120       0.9197     0.4852        106                58
+7   awid3                              arbiter: one-feature rule  0.9379  0.9068  0.9641  0.9592  0.9176  0.0182  0.0824  423   18   38  972     -0.0408 -0.0682 -0.0197       0.9197     0.4852        106                58
+8   awid3                    No gate: XGB + LSTM -> rule arbiter  0.9798  0.9586  0.9961  0.9623  0.9978  0.0182  0.0022  460   18    1  972      0.0010  0.0000  0.0035       0.9197     0.4852        106                58
+[rids] fold 0: gate AE t=36.78 val pass 0.012 | test gate recall 1.000 pass 0.028 escalated 8 (0 attack)
+[rids] fold 1: gate OCSVM t=0.4124 val pass 0.055 | test gate recall 1.000 pass 0.064 escalated 0 (0 attack)
+[rids] fold 2: gate AE t=29.44 val pass 0.022 | test gate recall 0.977 pass 0.007 escalated 2 (2 attack)
+[rids] fold 3: gate OCSVM t=0.268 val pass 0.024 | test gate recall 0.982 pass 0.065 escalated 0 (0 attack)
+[rids] fold 4: gate AE t=29.74 val pass 0.021 | test gate recall 0.991 pass 0.015 escalated 0 (0 attack)
+[rids] parity XGB: max |reloaded - stored OOF score| = 2.62e-08
+[rids] parity LSTM: max |reloaded - stored OOF score| = 1.49e-07
+[rids] parity AE: max |reloaded - stored OOF score| = 2.50e+04
+  dataset                                                 config      F1   F1_lo   F1_hi       P       R     FPR     FNR   TP   FP  FN     TN  dF1_vs_XGB  dF1_lo  dF1_hi  gate_recall  pass_rate  escalated  escalated_attack
+0    rids                                          XGBoost alone  0.9876  0.9701  0.9978  0.9821  0.9932  0.0002  0.0068  438    8   3  38316      0.0000  0.0000  0.0000       0.9909     0.0359         10                 2
+1    rids                                             LSTM alone  0.9898  0.9787  0.9985  0.9887  0.9909  0.0001  0.0091  437    5   4  38319      0.0022 -0.0131  0.0221       0.9909     0.0359         10                 2
+2    rids                          Autoencoder alone (99th pct.)  0.6117  0.5314  0.6781  0.4456  0.9751  0.0140  0.0249  430  535  11  37789     -0.3759 -0.4596 -0.3118       0.9909     0.0359         10                 2
+3    rids               Gate 99th pct. (Table 1.3 AE) -> XGBoost  0.9772  0.9532  0.9936  0.9817  0.9728  0.0002  0.0272  429    8  12  38316     -0.0104 -0.0294  0.0000       0.9909     0.0359         10                 2
+4    rids  Gate (recall 0.99) -> stage 2, arbiter: trust XGBoost  0.9842  0.9650  0.9956  0.9819  0.9864  0.0002  0.0136  435    8   6  38316     -0.0034 -0.0094  0.0000       0.9909     0.0359         10                 2
+5    rids                                 arbiter: always benign  0.9908  0.9820  0.9977  1.0000  0.9819  0.0000  0.0181  433    0   8  38324      0.0032 -0.0092  0.0215       0.9909     0.0359         10                 2
+6    rids                                    arbiter: trust LSTM  0.9908  0.9820  0.9977  1.0000  0.9819  0.0000  0.0181  433    0   8  38324      0.0032 -0.0092  0.0215       0.9909     0.0359         10                 2
+7    rids                              arbiter: one-feature rule  0.9932  0.9858  0.9987  1.0000  0.9864  0.0000  0.0136  435    0   6  38324      0.0056 -0.0061  0.0235       0.9909     0.0359         10                 2
+8    rids                    No gate: XGB + LSTM -> rule arbiter  0.9966  0.9921  1.0000  1.0000  0.9932  0.0000  0.0068  438    0   3  38324      0.0090  0.0000  0.0270       0.9909     0.0359         10                 2

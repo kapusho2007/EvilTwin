@@ -1,0 +1,3 @@
+dataset,beaconing_aps_with_ssid,aps_multi_ssid,windows_old,windows_new,same_shape,cells_changed_ssid_features,cells_changed_all,windows_changed
+awid3,2,0,1451,1451,True,0,0,0
+rids,3,0,38765,38765,True,0,0,0

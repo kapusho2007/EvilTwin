@@ -1,0 +1,31 @@
+awid3->rids XGB   all_15       ROC-AUC 0.500 PR-AUC 0.011 (const 0.011) F1 0.000 FPR 0.000  CONSTANT OUTPUT
+awid3->rids XGB   same_sign_6  ROC-AUC 0.999 PR-AUC 0.810 (const 0.011) F1 0.012 FPR 0.001
+awid3->rids OCSVM all_15       ROC-AUC 0.994 PR-AUC 0.634 (const 0.011) F1 0.508 FPR 0.021
+awid3->rids OCSVM same_sign_6  ROC-AUC 0.615 PR-AUC 0.014 (const 0.011) F1 0.012 FPR 0.011
+awid3->rids AE    all_15       ROC-AUC 0.995 PR-AUC 0.663 (const 0.011) F1 0.436 FPR 0.029
+awid3->rids AE    same_sign_6  ROC-AUC 0.590 PR-AUC 0.018 (const 0.011) F1 0.022 FPR 0.000
+awid3->rids LSTM  view_B       ROC-AUC 0.259 PR-AUC 0.008 (const 0.011) F1 0.003 FPR 0.040
+rids->awid3 XGB   all_15       ROC-AUC 0.781 PR-AUC 0.631 (const 0.318) F1 0.000 FPR 0.000
+rids->awid3 XGB   same_sign_6  ROC-AUC 0.858 PR-AUC 0.732 (const 0.318) F1 0.539 FPR 0.041
+rids->awid3 OCSVM all_15       ROC-AUC 0.250 PR-AUC 0.214 (const 0.318) F1 0.342 FPR 0.784
+rids->awid3 OCSVM same_sign_6  ROC-AUC 0.398 PR-AUC 0.269 (const 0.318) F1 0.448 FPR 0.879
+rids->awid3 AE    all_15       ROC-AUC 0.294 PR-AUC 0.242 (const 0.318) F1 0.224 FPR 0.709
+rids->awid3 AE    same_sign_6  ROC-AUC 0.305 PR-AUC 0.303 (const 0.318) F1 0.437 FPR 0.971
+rids->awid3 LSTM  view_B       ROC-AUC 0.748 PR-AUC 0.463 (const 0.318) F1 0.603 FPR 0.183
+              feature  awid3_mean  awid3_median  awid3_iqr  awid3_missing  rids_mean  rids_median  rids_iqr  rids_missing     ks
+0            n_frames    1108.676       561.200   1972.200          0.000     40.469        9.800     2.000         0.000  0.718
+1         beacon_rate       8.588         9.400      1.400          0.000      9.214        8.800     0.600         0.000  0.440
+2        deauth_count       0.244         0.000      0.000          0.000      0.012        0.000     0.000         0.000  0.109
+3      beacon_iat_std       0.031         0.015      0.038          0.045      7.032        0.033     0.014         0.006  0.503
+4            seq_anom       0.139         0.130      0.101          0.007      0.107        0.091     0.057         0.005  0.297
+5          retry_rate       0.076         0.057      0.090          0.000      0.011        0.000     0.000         0.000  0.774
+6       duration_mean      45.155        49.733     27.014          0.000      6.596        0.000     0.000         0.000  0.845
+7        duration_std      47.733        25.085     29.270          0.000      4.901        0.000     0.000         0.000  0.850
+8         length_mean     713.234       873.136    891.407          0.000    423.006      407.915    17.050         0.000  0.543
+9          length_std     418.106       576.486    514.242          0.000     32.274       27.900    37.200         0.000  0.796
+10          rssi_mean     -37.789       -33.047     10.804          0.007    -26.523      -25.761     1.105         0.005  0.977
+11           rssi_std       0.719         0.422      0.913          0.007      3.825        1.508     6.316         0.005  0.610
+12  n_bssid_same_ssid       1.691         2.000      1.000          0.045      1.000        1.000     0.000         0.006  0.691
+13  rssi_sibling_diff       0.000         0.000     22.725          0.340        NaN          NaN       NaN         1.000    NaN
+14      ssid_newcomer       0.330         0.000      1.000          0.000      0.000        0.000     0.000         0.000  0.330
+done in 320s

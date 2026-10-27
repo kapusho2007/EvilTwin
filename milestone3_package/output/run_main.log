@@ -1,0 +1,13 @@
+[awid3] Rule                          F1 0.966±0.030 | pooled F1 0.967 [0.939, 0.990] P 0.961 R 0.972 FPR 0.0182 | PR-AUC 0.939 ROC-AUC 0.988 | 3s
+[awid3] RF                            F1 0.977±0.029 | pooled F1 0.978 [0.957, 0.994] P 0.962 R 0.993 FPR 0.0182 | PR-AUC 0.976 ROC-AUC 0.991 | 22s
+[awid3] XGB                           F1 0.979±0.029 | pooled F1 0.979 [0.958, 0.995] P 0.960 R 0.998 FPR 0.0192 | PR-AUC 0.971 ROC-AUC 0.993 | 1s
+[awid3] OCSVM                         F1 0.269±0.319 | pooled F1 0.350 [0.220, 0.465] P 0.688 R 0.234 FPR 0.0495 | PR-AUC 0.701 ROC-AUC 0.882 | 0s
+[awid3] AE                            F1 0.253±0.305 | pooled F1 0.327 [0.202, 0.442] P 0.643 R 0.219 FPR 0.0566 | PR-AUC 0.759 ROC-AUC 0.920 | 14s
+[awid3] LSTM                          F1 0.783±0.215 | pooled F1 0.766 [0.685, 0.827] P 0.689 R 0.861 FPR 0.1808 | PR-AUC 0.760 ROC-AUC 0.870 | 49s
+[rids] Rule                          F1 0.825±0.270 | pooled F1 0.659 [0.578, 0.732] P 0.495 R 0.984 FPR 0.0115 | PR-AUC 0.716 ROC-AUC 0.984 | 20s
+[rids] RF                            F1 0.976±0.041 | pooled F1 0.984 [0.966, 0.997] P 1.000 R 0.968 FPR 0.0000 | PR-AUC 0.999 ROC-AUC 1.000 | 28s
+[rids] XGB                           F1 0.988±0.013 | pooled F1 0.988 [0.970, 0.998] P 0.982 R 0.993 FPR 0.0002 | PR-AUC 0.992 ROC-AUC 0.996 | 3s
+[rids] OCSVM                         F1 0.634±0.214 | pooled F1 0.561 [0.470, 0.639] P 0.398 R 0.950 FPR 0.0166 | PR-AUC 0.546 ROC-AUC 0.994 | 12s
+[rids] AE                            F1 0.665±0.197 | pooled F1 0.612 [0.531, 0.678] P 0.446 R 0.975 FPR 0.0140 | PR-AUC 0.842 ROC-AUC 0.997 | 233s
+[rids] LSTM                          F1 0.988±0.011 | pooled F1 0.990 [0.979, 0.999] P 0.989 R 0.991 FPR 0.0001 | PR-AUC 0.999 ROC-AUC 1.000 | 509s
+done in 1204s

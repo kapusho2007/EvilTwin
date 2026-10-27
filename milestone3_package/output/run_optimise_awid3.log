@@ -1,0 +1,30 @@
+[awid3] start  XGB   val F1 0.980 FPR 0.0189 FNR 0.000
+[awid3] start  LSTM  val F1 0.878 FPR 0.1132 FNR 0.025
+[awid3] start  OCSVM val F1 0.056 FPR 0.0105 FNR 0.971
+[awid3] start  AE    val F1 0.381 FPR 0.0105 FNR 0.760
+[awid3] noise  XGB   val F1 0.980 -> 0.980  FPR 0.0189 FNR 0.000  KEEP
+[awid3] noise  LSTM  val F1 0.878 -> 0.878  FPR 0.1195 FNR 0.016  KEEP
+[awid3] noise  OCSVM val F1 0.056 -> 0.105  FPR 0.0105 FNR 0.943  KEEP
+[awid3] noise  AE    val F1 0.381 -> 0.463  FPR 0.0105 FNR 0.692  KEEP
+[awid3] oc_f1  XGB   val F1 0.980 -> 0.980  FPR 0.0189 FNR 0.000  KEEP
+[awid3] oc_f1  LSTM  val F1 0.878 -> 0.878  FPR 0.1195 FNR 0.016  KEEP
+[awid3] oc_f1  OCSVM val F1 0.105 -> 0.511  FPR 0.7956 FNR 0.066  KEEP
+[awid3] oc_f1  AE    val F1 0.463 -> 0.872  FPR 0.0797 FNR 0.093  KEEP
+[awid3] hybrid XGB   val F1 0.980 -> 0.980  FPR 0.0189 FNR 0.000  drop
+[awid3] hybrid LSTM  val F1 0.878 -> 0.860  FPR 0.1143 FNR 0.059  drop
+[awid3] hybrid OCSVM val F1 0.511 -> 0.511  FPR 0.7956 FNR 0.066  drop
+[awid3] hybrid AE    val F1 0.872 -> 0.872  FPR 0.0797 FNR 0.093  drop
+[awid3] ap_baseXGB   val F1 0.980 -> 0.980  FPR 0.0189 FNR 0.000  KEEP
+[awid3] ap_baseLSTM  val F1 0.878 -> 0.878  FPR 0.1195 FNR 0.016  KEEP
+[awid3] ap_baseOCSVM val F1 0.511 -> 0.744  FPR 0.1813 FNR 0.175  KEEP
+[awid3] ap_baseAE    val F1 0.872 -> 0.829  FPR 0.1709 FNR 0.029  KEEP
+[awid3] TEST start XGB   F1 0.979 [0.958, 0.995] FPR 0.0192 FNR 0.002 FP 19 FN 1
+[awid3] TEST final XGB   F1 0.971 [0.948, 0.991] FPR 0.0283 FNR 0.000 FP 28 FN 0
+[awid3] TEST start LSTM  F1 0.745 [0.661, 0.810] FPR 0.2030 FNR 0.148 FP 201 FN 68
+[awid3] TEST final LSTM  F1 0.767 [0.683, 0.831] FPR 0.2071 FNR 0.102 FP 205 FN 47
+[awid3] TEST start OCSVM F1 0.107 [0.037, 0.190] FPR 0.0354 FNR 0.939 FP 35 FN 433
+[awid3] TEST final OCSVM F1 0.707 [0.630, 0.777] FPR 0.2162 FNR 0.200 FP 214 FN 92
+[awid3] TEST start AE    F1 0.335 [0.211, 0.448] FPR 0.0566 FNR 0.774 FP 56 FN 357
+[awid3] TEST final AE    F1 0.764 [0.689, 0.827] FPR 0.2162 FNR 0.095 FP 214 FN 44
+[awid3] final configuration: {'noise': True, 'oc_f1': True, 'hybrid': False, 'ap_base': True}
+done in 506s

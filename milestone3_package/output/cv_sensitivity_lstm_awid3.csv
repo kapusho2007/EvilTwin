@@ -1,0 +1,6 @@
+model,experiment,knob,value,val_PR_AUC,val_PR_AUC_sd,val_R_at_FPR1,PR_AUC,PR_AUC_sd,R_at_FPR1,F1,FPR,level
+LSTM,param,units,"(16, 8)",0.812,0.254,0.460,0.738,0.274,0.372,0.710,0.1605,fold_mean
+LSTM,param,units,"(32, 16)",0.832,0.245,0.450,0.743,0.284,0.350,0.770,0.2190,fold_mean
+LSTM,param,units,"(64, 32)",0.829,0.225,0.461,0.743,0.250,0.307,0.768,0.2032,fold_mean
+LSTM,param,units,"(128, 64)",0.827,0.202,0.432,0.761,0.221,0.354,0.769,0.2125,fold_mean
+LSTM,param,units,"(64, 0)",0.833,0.215,0.454,0.745,0.206,0.325,0.760,0.2023,fold_mean

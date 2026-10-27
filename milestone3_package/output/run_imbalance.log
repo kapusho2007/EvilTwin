@@ -1,0 +1,11 @@
+[awid3] XGB    none                   F1 0.967±0.032 | pooled F1 0.968 [0.941, 0.991] P 0.961 R 0.974 FPR 0.0182 | PR-AUC 0.969 ROC-AUC 0.992 | 1s
+[awid3] XGB    cost                   F1 0.981±0.027 | pooled F1 0.981 [0.960, 0.997] P 0.962 R 1.000 FPR 0.0182 | PR-AUC 0.974 ROC-AUC 0.994 | 1s
+[awid3] XGB    smote                  F1 0.968±0.030 | pooled F1 0.969 [0.944, 0.991] P 0.962 R 0.976 FPR 0.0182 | PR-AUC 0.967 ROC-AUC 0.992 | 1s
+[awid3] LSTM   none                   F1 0.770±0.207 | pooled F1 0.756 [0.672, 0.821] P 0.680 R 0.852 FPR 0.1869 | PR-AUC 0.734 ROC-AUC 0.858 | 52s
+[awid3] LSTM   cost                   F1 0.783±0.215 | pooled F1 0.766 [0.685, 0.827] P 0.689 R 0.861 FPR 0.1808 | PR-AUC 0.760 ROC-AUC 0.870 | 51s
+[rids] XGB    none                   F1 0.933±0.136 | pooled F1 0.894 [0.830, 0.945] P 0.813 R 0.993 FPR 0.0026 | PR-AUC 0.995 ROC-AUC 0.998 | 2s
+[rids] XGB    cost                   F1 0.981±0.018 | pooled F1 0.979 [0.961, 0.994] P 0.963 R 0.995 FPR 0.0004 | PR-AUC 0.992 ROC-AUC 0.996 | 2s
+[rids] XGB    smote                  F1 0.979±0.043 | pooled F1 0.985 [0.968, 0.998] P 1.000 R 0.971 FPR 0.0000 | PR-AUC 0.999 ROC-AUC 1.000 | 3s
+[rids] LSTM   none                   F1 0.979±0.035 | pooled F1 0.974 [0.954, 0.992] P 0.956 R 0.993 FPR 0.0005 | PR-AUC 0.998 ROC-AUC 1.000 | 697s
+[rids] LSTM   cost                   F1 0.988±0.011 | pooled F1 0.990 [0.979, 0.999] P 0.989 R 0.991 FPR 0.0001 | PR-AUC 0.999 ROC-AUC 1.000 | 543s
+done in 1642s

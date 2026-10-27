@@ -1,0 +1,21 @@
+[awid3] features  set=default          n=1451 pos=461 | val PR-AUC 0.971 | test PR-AUC 0.971±0.041 R@1% 0.728 F1 0.979±0.029 | pooled F1 0.979 FPR 0.0192
+[awid3] features  set=-timing          n=1451 pos=461 | val PR-AUC 0.975 | test PR-AUC 0.960±0.051 R@1% 0.575 F1 0.965±0.032 | pooled F1 0.966 FPR 0.0192
+[awid3] features  set=-size            n=1451 pos=461 | val PR-AUC 0.964 | test PR-AUC 0.974±0.038 R@1% 0.752 F1 0.981±0.027 | pooled F1 0.981 FPR 0.0182
+[awid3] features  set=-rssi            n=1451 pos=461 | val PR-AUC 0.977 | test PR-AUC 0.980±0.029 R@1% 0.852 F1 0.979±0.029 | pooled F1 0.980 FPR 0.0182
+[awid3] features  set=-ssid_context    n=1451 pos=461 | val PR-AUC 0.986 | test PR-AUC 0.964±0.048 R@1% 0.600 F1 0.964±0.034 | pooled F1 0.964 FPR 0.0192
+[awid3] features  set=+protected       n=1451 pos=461 | val PR-AUC 0.967 | test PR-AUC 0.974±0.037 R@1% 0.752 F1 0.979±0.029 | pooled F1 0.979 FPR 0.0192
+[awid3] features  set=+mfpc            n=1451 pos=461 | val PR-AUC 0.967 | test PR-AUC 0.974±0.037 R@1% 0.752 F1 0.979±0.029 | pooled F1 0.979 FPR 0.0192
+[awid3] features  set=+protected+mfpc  n=1451 pos=461 | val PR-AUC 0.964 | test PR-AUC 0.971±0.040 R@1% 0.728 F1 0.979±0.029 | pooled F1 0.979 FPR 0.0192
+[awid3] window    D=2                n=1398 pos=448 | val PR-AUC 0.951 | test PR-AUC 0.960±0.039 R@1% 0.521 F1 0.957±0.048 | pooled F1 0.958 FPR 0.0274
+[awid3] window    D=10               n=1528 pos=472 | val PR-AUC 0.985 | test PR-AUC 0.973±0.038 R@1% 0.600 F1 0.985±0.023 | pooled F1 0.984 FPR 0.0133
+[rids] features  set=default          n=38765 pos=441 | val PR-AUC 0.995 | test PR-AUC 0.992±0.010 R@1% 0.992 F1 0.983±0.024 | pooled F1 0.981 FPR 0.0004
+[rids] features  set=-timing          n=38765 pos=441 | val PR-AUC 0.998 | test PR-AUC 0.981±0.023 R@1% 1.000 F1 0.985±0.010 | pooled F1 0.983 FPR 0.0003
+[rids] features  set=-size            n=38765 pos=441 | val PR-AUC 0.994 | test PR-AUC 0.992±0.010 R@1% 0.992 F1 0.992±0.005 | pooled F1 0.993 FPR 0.0000
+[rids] features  set=-rssi            n=38765 pos=441 | val PR-AUC 1.000 | test PR-AUC 0.994±0.009 R@1% 0.994 F1 0.944±0.070 | pooled F1 0.940 FPR 0.0014
+[rids] features  set=-ssid_context    n=38765 pos=441 | val PR-AUC 0.994 | test PR-AUC 0.990±0.010 R@1% 0.990 F1 0.994±0.004 | pooled F1 0.995 FPR 0.0000
+[rids] features  set=+protected       n=38765 pos=441 | val PR-AUC 0.998 | test PR-AUC 0.994±0.009 R@1% 0.994 F1 0.978±0.023 | pooled F1 0.977 FPR 0.0005
+[rids] features  set=+mfpc            n=38765 pos=441 | val PR-AUC 1.000 | test PR-AUC 0.995±0.010 R@1% 0.995 F1 0.998±0.005 | pooled F1 0.999 FPR 0.0000
+[rids] features  set=+protected+mfpc  n=38765 pos=441 | val PR-AUC 1.000 | test PR-AUC 0.995±0.010 R@1% 0.995 F1 0.998±0.005 | pooled F1 0.999 FPR 0.0000
+[rids] window    D=2                n=38269 pos=430 | val PR-AUC 0.999 | test PR-AUC 0.996±0.005 R@1% 0.996 F1 0.973±0.047 | pooled F1 0.965 FPR 0.0007
+[rids] window    D=10               n=39185 pos=451 | val PR-AUC 0.992 | test PR-AUC 0.968±0.040 R@1% 0.988 F1 0.980±0.018 | pooled F1 0.979 FPR 0.0003
+done in 451s

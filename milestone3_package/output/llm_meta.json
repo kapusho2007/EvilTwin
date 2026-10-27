@@ -1,0 +1,38 @@
+{
+ "model": "llama3.1:8b-instruct-q4_K_M",
+ "options": {
+  "temperature": 0.0,
+  "top_p": 0.9,
+  "num_predict": 512,
+  "seed": 42,
+  "num_ctx": 4096
+ },
+ "prompt_version": "v2",
+ "ollama_show": "  Model\n    architecture        llama          \n    parameters          8.0B           \n    context length      131072         \n    embedding length    4096           \n    quantization        Q4_K_M         \n    template source     go_template    \n\n  Capabilities\n    completion    \n    tools         \n\n  Parameters\n    stop    \"<|start_header_id|>\"    \n    stop    \"<|end_header_id|>\"      \n    stop    \"<|eot_id|>\"             \n\n  License\n    LLAMA 3.1 COMMUNITY LICENSE AGREEMENT            \n    Llama 3.1 Version Release Date: July 23, 2024    \n    ...                                              \n\n",
+ "tags": [
+  {
+   "name": "llama3.1:8b-instruct-q4_K_M",
+   "model": "llama3.1:8b-instruct-q4_K_M",
+   "modified_at": "2026-10-26T20:02:59.1960224+02:00",
+   "size": 4920753328,
+   "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "details": {
+    "parent_model": "",
+    "format": "gguf",
+    "family": "llama",
+    "families": [
+     "llama"
+    ],
+    "parameter_size": "8.0B",
+    "quantization_level": "Q4_K_M",
+    "context_length": 131072,
+    "embedding_length": 4096,
+    "runner": "ggml"
+   },
+   "capabilities": [
+    "completion",
+    "tools"
+   ]
+  }
+ ]
+}

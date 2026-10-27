@@ -1,0 +1,7 @@
+[awid3] Rule                          F1 0.914±0.133 | pooled F1 0.926 [0.885, 0.958] P 0.958 R 0.896 FPR 0.0182 | PR-AUC 0.915 ROC-AUC 0.964 | 3s
+[awid3] RF                            F1 0.977±0.029 | pooled F1 0.978 [0.955, 0.995] P 0.962 R 0.993 FPR 0.0182 | PR-AUC 0.976 ROC-AUC 0.991 | 19s
+[awid3] XGB                           F1 0.979±0.029 | pooled F1 0.979 [0.956, 0.995] P 0.960 R 0.998 FPR 0.0192 | PR-AUC 0.971 ROC-AUC 0.993 | 1s
+[awid3] OCSVM                         F1 0.269±0.319 | pooled F1 0.350 [0.253, 0.437] P 0.688 R 0.234 FPR 0.0495 | PR-AUC 0.701 ROC-AUC 0.882 | 0s
+[awid3] AE                            F1 0.253±0.305 | pooled F1 0.327 [0.232, 0.412] P 0.643 R 0.219 FPR 0.0566 | PR-AUC 0.759 ROC-AUC 0.920 | 12s
+[awid3] LSTM                          F1 0.783±0.162 | pooled F1 0.766 [0.712, 0.810] P 0.692 R 0.857 FPR 0.1778 | PR-AUC 0.797 ROC-AUC 0.876 | 27s
+done in 85s

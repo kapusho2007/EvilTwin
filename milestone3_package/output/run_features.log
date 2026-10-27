@@ -1,0 +1,48 @@
+[awid3] frames raw=3,778,679 clean=1,609,803 attack_frames=104,826 | APs=4 windows=1,451 attack_windows=461
+              feature  missing_benign  missing_attack  median_benign  median_attack    auc  auc_1  cliffs_delta  review
+0            n_frames           0.000           0.000       1494.700         14.200  0.176  0.824        -0.648   False
+1          share_data           0.000           0.000          0.994          0.176  0.127  0.873        -0.747   False
+2          share_mgmt           0.000           0.000          0.006          0.824  0.873  0.873         0.747   False
+3         beacon_rate           0.000           0.000          9.600          8.200  0.097  0.903        -0.806   False
+4        deauth_count           0.000           0.000          0.000          0.000  0.606  0.606         0.213   False
+5     beacon_iat_mean           0.066           0.000          0.103          0.122  0.976  0.976         0.952   False
+6      beacon_iat_std           0.066           0.000          0.003          0.050  0.971  0.971         0.943   False
+7            seq_anom           0.010           0.000          0.127          0.143  0.605  0.605         0.209   False
+8          retry_rate           0.000           0.000          0.061          0.043  0.433  0.567        -0.133   False
+9       duration_mean           0.000           0.000         50.873         31.507  0.380  0.620        -0.241   False
+10       duration_std           0.000           0.000         20.289         36.585  0.615  0.615         0.229   False
+11        length_mean           0.000           0.000       1015.352        189.573  0.186  0.814        -0.628   False
+12         length_std           0.000           0.000        635.178        192.000  0.203  0.797        -0.594   False
+13          rssi_mean           0.010           0.000        -33.021        -44.417  0.062  0.938        -0.875   False
+14           rssi_std           0.010           0.000          0.195          1.257  0.899  0.899         0.798   False
+15     clock_skew_ppm           0.069           0.011        -14.199         -8.431  0.568  0.568         0.136   False
+16  n_bssid_same_ssid           0.066           0.000          2.000          2.000  0.731  0.731         0.463   False
+17  rssi_sibling_diff           0.498           0.000         11.296        -11.377  0.013  0.987        -0.975   False
+18               mfpc           0.074           0.497          1.000          0.000  0.005  0.995        -0.989    True
+19  mfpc_sibling_diff           0.745           0.497          1.000         -1.000  0.020  0.980        -0.960   False
+20      ssid_newcomer           0.000           0.000          0.000          1.000  0.991  0.991         0.982    True
+
+[rids] frames raw=4,443,584 clean=1,571,120 attack_frames=25,129 | APs=5 windows=38,765 attack_windows=441
+              feature  missing_benign  missing_attack  median_benign  median_attack    auc  auc_1  cliffs_delta  review
+0            n_frames           0.000           0.000          9.800         61.400  0.971  0.971         0.943   False
+1          share_data           0.000           0.000          0.000          0.004  0.769  0.769         0.537   False
+2          share_mgmt           0.000           0.000          1.000          0.996  0.231  0.769        -0.537   False
+3         beacon_rate           0.000           0.000          8.800         56.800  0.993  0.993         0.987    True
+4        deauth_count           0.000           0.000          0.000          0.000  0.577  0.577         0.154   False
+5     beacon_iat_mean           0.006           0.000          0.112          0.018  0.011  0.989        -0.977   False
+6      beacon_iat_std           0.006           0.000          0.033          0.007  0.068  0.932        -0.863   False
+7            seq_anom           0.005           0.000          0.091          0.139  0.752  0.752         0.503   False
+8          retry_rate           0.000           0.000          0.000          0.023  0.846  0.846         0.692   False
+9       duration_mean           0.000           0.000          0.000          2.114  0.776  0.776         0.552   False
+10       duration_std           0.000           0.000          0.000         25.723  0.783  0.783         0.567   False
+11        length_mean           0.000           0.000        407.915        156.746  0.005  0.995        -0.989    True
+12         length_std           0.000           0.000         27.655         52.021  0.846  0.846         0.692   False
+13          rssi_mean           0.005           0.000        -25.742        -32.617  0.014  0.986        -0.972   False
+14           rssi_std           0.005           0.000          1.358          4.656  0.616  0.616         0.232   False
+15     clock_skew_ppm           0.944           0.041        -19.918        -17.971  0.447  0.553        -0.106   False
+16  n_bssid_same_ssid           0.006           0.000            NaN            NaN    NaN    NaN           NaN   False
+17  rssi_sibling_diff           1.000           1.000            NaN            NaN    NaN    NaN           NaN   False
+18               mfpc           0.006           0.000          1.000          0.000  0.000  1.000        -1.000    True
+19  mfpc_sibling_diff           1.000           1.000            NaN            NaN    NaN    NaN           NaN   False
+20      ssid_newcomer           0.000           0.000            NaN            NaN    NaN    NaN           NaN   False
+

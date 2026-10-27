@@ -1,0 +1,45 @@
+[awid3] RuleFixed FP   18  FN    0
+[awid3] Rule      FP   18  FN   13
+[awid3] RF        FP   18  FN    3
+[awid3] XGB       FP   19  FN    1
+[awid3] OCSVM     FP   49  FN  353
+[awid3] AE        FP   56  FN  360
+[awid3] LSTM      FP  179  FN   64
+[awid3] FP windows shared by RuleFixed, RF, XGB, LSTM: 18, APs {'0c:9d:92:54:fe:35': 18}
+value            beacon   data  null  probe_resp
+model     error                                 
+AE        FN      249.0  108.0   0.0         3.0
+          FP        9.0   47.0   0.0         0.0
+LSTM      FN        6.0   58.0   0.0         0.0
+          FP       91.0   81.0   7.0         0.0
+OCSVM     FN      262.0   88.0   0.0         3.0
+          FP        6.0   43.0   0.0         0.0
+RF        FN        3.0    0.0   0.0         0.0
+          FP       18.0    0.0   0.0         0.0
+Rule      FN       13.0    0.0   0.0         0.0
+          FP       18.0    0.0   0.0         0.0
+RuleFixed FP       18.0    0.0   0.0         0.0
+XGB       FN        1.0    0.0   0.0         0.0
+          FP       18.0    1.0   0.0         0.0
+[rids] RuleFixed FP    0  FN    8
+[rids] Rule      FP  442  FN    7
+[rids] RF        FP    0  FN   14
+[rids] XGB       FP    8  FN    3
+[rids] OCSVM     FP  635  FN   22
+[rids] AE        FP  535  FN   11
+[rids] LSTM      FP    5  FN    4
+[rids] FP windows shared by RuleFixed, RF, XGB, LSTM: 0, APs {}
+value            auth  beacon   data  deauth_disassoc   null  probe_resp
+model     error                                                         
+AE        FN      0.0    11.0    0.0              0.0    0.0         0.0
+          FP      2.0   162.0  241.0              3.0  116.0        11.0
+LSTM      FN      0.0     3.0    0.0              0.0    1.0         0.0
+          FP      0.0     0.0    0.0              0.0    5.0         0.0
+OCSVM     FN      0.0    22.0    0.0              0.0    0.0         0.0
+          FP      5.0   385.0  208.0              3.0   18.0        16.0
+RF        FN      0.0    13.0    0.0              0.0    1.0         0.0
+Rule      FN      0.0     7.0    0.0              0.0    0.0         0.0
+          FP      0.0   364.0    7.0              3.0   53.0        15.0
+RuleFixed FN      0.0     7.0    0.0              0.0    1.0         0.0
+XGB       FN      0.0     2.0    0.0              0.0    1.0         0.0
+          FP      0.0     0.0    8.0              0.0    0.0         0.0
