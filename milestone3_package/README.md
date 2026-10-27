@@ -8,7 +8,6 @@ Datasets: AWID3 (Evil_Twin subset) and RIDS (RogueAP class).
 ```
 report/   Milestone3_Report.docx   graded report (≤ 15 body pages + appendices)
           Milestone3_Report.pdf    same report as PDF
-          Milestone3_Report.md     build source; figures/ holds every figure
 code/     the pipeline (Section 1.1): run_ingest → run_features → run_train → run_errors → run_cascade → run_llm
           pipeline/   ingestion (only dataset-aware module), preprocess, features, models, train, evaluate, cascade, llm
           tests/      unit tests (python -m pytest tests)
